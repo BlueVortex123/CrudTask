@@ -46,18 +46,7 @@ class EmployeeController extends Controller
     public function update(Employee $employee)
     {
         
-        /*
-        $employee = employee::find($id);
-        $employee->first_name =  $request->get('first_name');
-        $employee->last_name = $request->get('last_name');
-        $employee->email = $request->get('email');
-        $employee->job_title = $request->get('job_title');
-        $employee->city = $request->get('city');
-        $employee->country = $request->get('country');
-        $employee->save();
-
-        return redirect(route('employees.show', $employee))->with('success', 'employee updated!');
-        */
+   
 
         $employee->update($this->validateEmployee());
 
